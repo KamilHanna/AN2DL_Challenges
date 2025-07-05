@@ -27,9 +27,17 @@ After cleaning the data—removing 98 duplicate outliers—and balancing the cla
 
 All code is located in the `Challenge1_2023` folder, along with a detailed report outlining the full pipeline and additional architecture experiments.
 
+# Challenge 2 [Edition 2023] : Time Series Prediction
 
-### Challenge 2 [Edition 2023] :
 Competition available on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/16514).
+
+This challenge addresses a time series forecasting task: predicting the next steps of given time series sequences. The dataset contains **48,000 multivariate time series**, each with **2,776 time steps**, and associated metadata specifying a start and end index for the valid range. Although category labels (A–F) were provided, they were not used, as they did not correspond to distinct series behaviors.
+
+After extracting the valid segments from each series, we processed the data into fixed-length sequences of **200 steps**, paired with targets of **18 future steps**, using a custom splicing approach. We applied basic data augmentation, including duplication with slight rounding variations, which improved results.
+
+The final model is a **simple LSTM-based neural network** without convolutional or attention layers, followed by three dense layers. It was trained using a batch size of **32** and **MSE loss**, and evaluated using validation MSE. The best submission achieved an **MSE of 0.009** on the CodaLab leaderboard.
+
+All code for this project is located in the `Challenge2_2023` folder, along with a detailed report documenting the full pipeline, architecture selection, and experimental results.
 
 
 
