@@ -17,7 +17,7 @@ Competition available on [Codabench](https://www.codabench.org/competitions/4430
 ### Challenge 2 [Edition 2024] :
 Competition available on [Kaggle](https://www.kaggle.com/t/af80f36772144dbb8b6179fea6180574 ).
 
-# Challenge 1 [Edition 2023] : Leaf Classification
+## Challenge 1 [Edition 2023] : Leaf Classification
 
 Competition available on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/16245).
 
@@ -27,7 +27,7 @@ After cleaning the data—removing 98 duplicate outliers—and balancing the cla
 
 All code is located in the `Challenge1_2023` folder, along with a detailed report outlining the full pipeline and additional architecture experiments.
 
-# Challenge 2 [Edition 2023] : Time Series Prediction
+## Challenge 2 [Edition 2023] : Time Series Prediction
 
 Competition available on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/16514).
 
