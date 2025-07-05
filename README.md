@@ -30,7 +30,7 @@ The dataset contains **2,615 images**, reduced to **2,505** after removing outli
 
 Our final model is based on **U-Net 3+**, modified with architectural enhancements including **dropout layers**, **trainable skip connection filters**, **squeeze-and-excite blocks**, and **L2 regularization**. We used a **weighted sparse categorical loss function** and trained the model over **two 100-epoch sessions**, reaching a **mean IoU of 0.643** on the Kaggle leaderboard. All training used a batch size of **64**, with **AdamW** optimizer and learning rate scheduling.
 
-All code and resources are located in the `Challenge2_2025` folder, including:
+All code and resources are located in the `Challenge2_2024` folder, including:
 - A detailed report describing the preprocessing pipeline, architecture experiments (MS-UNet, MarsSeg, Deep Residual U-Net), and training results.
 - Python scripts used for **dataset modification and augmentation**.
 - A reference implementation of a **basic U-Net** model for comparison and reproducibility.
