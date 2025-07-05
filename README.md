@@ -10,9 +10,15 @@
 Note that additional information about the models are present in the report pdf files ,in each directory.
 Moreover, please note that some of the competition links might be down/unaccessible to users without Politecnico di Milano credentials.
 
-### Challenge 1 [Edition 2024] :
+## Challenge 1 [Edition 2024] :  Blood Cell Classification
+
 Competition available on [Codabench](https://www.codabench.org/competitions/4430/).
 
+This challenge focuses on building a Convolutional Neural Network (CNN) classifier to categorize **96x96 RGB images of blood cells** into **one of eight predefined classes**, each representing a specific cell state. The cleaned dataset comprises **11,959 labeled images** after removing significant outliers and handling class imbalance.
+
+The final solution is based on **ConvNeXtBase**, pre-trained on ImageNet, combined with a custom classification head including **SELU-activated dense layers**, **dropout**, and **L1L2 regularization**. We applied an extensive **data augmentation pipeline**, including **MixUp**, **CutMix**, **RandAugment**, and **channel shuffling**, with augmentations pre-applied to avoid performance issues during training.
+
+All code and assets are located in the `Challenge1_2024` folder, which also includes a detailed report outlining the full pipeline, augmentation techniques, architecture design, and tested alternatives. In addition to the final model, the folder contains our two best alternative models: one based on **EfficientNetV2B3** and another using a **simple custom convolutional network**. The final ConvNeXt model achieved a **Codabench score of 0.86**, with performance validated across training, validation, and local test sets.
 
 ### Challenge 2 [Edition 2024] :
 Competition available on [Kaggle](https://www.kaggle.com/t/af80f36772144dbb8b6179fea6180574 ).
