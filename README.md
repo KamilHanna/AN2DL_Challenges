@@ -21,7 +21,7 @@ Competition available on [Kaggle](https://www.kaggle.com/t/af80f36772144dbb8b617
 
 Competition available on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/16245).
 
-This project addresses a binary classification task: identifying whether a leaf in an image is **healthy** or **unhealthy**. The dataset consists of **5200 RGB images** of size **96x96**, each labeled accordingly. 
+This challenge addresses a binary classification task: identifying whether a leaf in an image is **healthy** or **unhealthy**. The dataset consists of **5200 RGB images** of size **96x96**, each labeled accordingly. 
 
 After cleaning the data—removing 98 duplicate outliers—and balancing the classes using **SMOTE**, we trained a deep learning model using **transfer learning**. The final architecture is based on **ConvNeXt Large**, with the first 90 layers frozen, and incorporates **batch normalization**, **dropout (0.1)**, and a **cyclical learning rate**. The best model achieved a **validation accuracy of 0.81**.
 
